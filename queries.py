@@ -36,11 +36,17 @@ XY_AT_LEAST_5 = '''
     WHERE x >= 5 AND y >= 5;
 '''
 
+UNIQUE_Y = '''
+    SELECT COUNT(DISTINCT y)
+    FROM demo;
+'''
+
 QUERY_LIST = [
     DROP_DEMO,
     CREATE_DEMO,
     INSERT_DEMO,
     CHECK_DEMO,
     ROW_COUNT,
-    XY_AT_LEAST_5
+    XY_AT_LEAST_5,
+    UNIQUE_Y
 ]
