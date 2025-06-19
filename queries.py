@@ -30,10 +30,17 @@ ROW_COUNT = '''
     FROM demo;
 '''
 
+XY_AT_LEAST_5 = '''
+    SELECT COUNT(*)
+    FROM demo
+    WHERE x >= 5 AND y >= 5;
+'''
+
 QUERY_LIST = [
     DROP_DEMO,
     CREATE_DEMO,
     INSERT_DEMO,
     CHECK_DEMO,
-    ROW_COUNT
+    ROW_COUNT,
+    XY_AT_LEAST_5
 ]
