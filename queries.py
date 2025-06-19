@@ -25,9 +25,15 @@ CHECK_DEMO = '''
     SELECT name FROM sqlite_master WHERE type='table' AND name='demo';
 '''
 
+ROW_COUNT = '''
+    SELECT COUNT(*)
+    FROM demo;
+'''
+
 QUERY_LIST = [
     DROP_DEMO,
     CREATE_DEMO,
     INSERT_DEMO,
-    CHECK_DEMO
+    CHECK_DEMO,
+    ROW_COUNT
 ]
